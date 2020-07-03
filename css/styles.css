@@ -1,3 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: linear-gradient(30deg, rgb(96,96,96), rgb(0,0,0));
+}
+
+.navbar {
+    overflow: hidden;
+    position: absolute;
+    margin: 20px 50px;
+}
+
+.navbar a {
+    position: relative;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 10;
+}
+
+.navbar a:hover {
+    z-index: 10;
+    position: relative;
+    background-color: #ddd;
+    color: black;
+  }
+
+.home, .projects{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
 h1 {
-    color: navy;
+    font-size: 50px;
 }
