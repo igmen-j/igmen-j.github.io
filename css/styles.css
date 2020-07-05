@@ -5,8 +5,10 @@ html {
 body {
     color: white;
     font-family: Tahoma, Geneva, sans-serif;
-    background: linear-gradient(30deg, rgb(96,96,96), rgb(0,0,0));
+    background: lightgray;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -33,6 +35,8 @@ body {
   }
 
 .home {
+    background: linear-gradient(rgb(64,64,64), slategray);
+    background: linear-gradient(30deg, rgb(96,96,96), rgb(0,0,0));
     position: relative;
     display: flex;
     flex-direction: column;
@@ -44,10 +48,14 @@ body {
 
 h1 {
     font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .projects {
     position: relative;
+    background-color: silver;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #projects {
@@ -56,8 +64,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    text-decoration: underline;
+    font-size: 50px;
+    color:	black;
+    /*text-shadow: 2px 2px 4px #000000;*/
+    
 }
 
 .proj-grid {
@@ -65,21 +75,63 @@ h1 {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     text-align: center;
     gap: 30px 100px;
-    color: white;
-    padding: 20px;
+    color: slategray;
+    padding: 50px;
 }
 
 .proj-grid-item {
-    background-color: black;
-    color: white;
+    background-color: gray;
+    color: black;
     text-decoration: none;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .proj-img {
     position: relative;
     width: 100%;
     height: auto;
+}
+
+.about {
+    background: linear-gradient(rgb(0,0,0), rgb(96,96,96));
+   /* background: linear-gradient(slategray, rgb(64,64,64));*/
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.about-title {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-left: 50px;
+}
+
+.about-contents {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.end {
+    padding-bottom: 20px;
+}
+
+.contact {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-left: 50px;
+}
+
+.contact-img {
+    max-width: 5%;
+    height: auto;
+    margin-left: 50px;
 }
