@@ -74,20 +74,39 @@ h1 {
 .proj-container {
     margin: 0 10vw 5vw;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: slategrey;
 }
 
 .proj-item {
-    background-color: #DCDCDC;
-    height: 50vh;
     display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    justify-content: center;
     align-items: center;
+    background-color: #DCDCDC;
+    margin-top: 50px;
     box-shadow: 10px 10px 5px #282828;
+    height: 35vh;
+}
+
+
+.proj-img {
+    height: 100%;
+    width: auto;
+}
+
+.proj-desc {
+    max-height: 75%;
+    overflow: hidden;
+    align-self: flex-start;
+    padding-left: 3%;
+    padding-right: 1%;
+    font-size: 16px;
+}
+
+.proj-title {
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px silver;
 }
 
 .about {
