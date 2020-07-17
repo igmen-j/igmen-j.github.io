@@ -88,10 +88,13 @@ h1 {
     height: 35vh;
 }
 
-
-.proj-img {
+.proj-item > img {
     height: 100%;
-    width: auto;
+    width: 33%;
+}
+
+.proj-img2 {
+    background-color: black;
 }
 
 .proj-desc {
