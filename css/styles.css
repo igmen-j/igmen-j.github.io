@@ -15,29 +15,32 @@ body {
 .navbar {
     overflow: hidden;
     position: absolute;
-    margin: 20px 50px;
+    margin: 30px 50px;
+    width: 50%;
+    
 }
 
 .navbar a {
     position: relative;
-    float: left;
     color: white;
     text-align: center;
     padding: 20px 30px;
     text-decoration: none;
     font-size: 17px;
     z-index: 10;
+    width: 50%;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.navbar a:hover {
+.navbar > a:hover {
     z-index: 10;
     position: relative;
-    border-bottom-style: groove;
+    text-shadow: 1px 1px 2px black, 0 0 12px blue, 0 0 5px darkblue;
   }
 
 .home {
-    background: linear-gradient(rgb(64,64,64), slategray);
-    background: linear-gradient(30deg, rgb(96,96,96), rgb(0,0,0));
+    /* background: linear-gradient(rgb(96,96,96), rgb(0,0,0)); */
+    background-color: slategray;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ h1 {
 
 .projects {
     position: relative;
-    background-color: slategrey;
+    background-color: gainsboro;
     color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -73,24 +76,21 @@ h1 {
 
 .proj-container {
     margin: 0 10vw 5vw;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: slategrey;
+    background-color: gainsboro;
 }
 
 .proj-item {
     display: flex;
     align-items: center;
-    background-color: #DCDCDC;
+    background-color: whitesmoke;
     margin-top: 50px;
-    box-shadow: 10px 10px 5px #282828;
-    height: 35vh;
+    box-shadow: 10px 10px 5px darkgray;
+    height: 40vh;
 }
 
 .proj-item > img {
     height: 100%;
-    width: 33%;
+    width: 35%;
 }
 
 .proj-img2 {
@@ -98,7 +98,7 @@ h1 {
 }
 
 .proj-desc {
-    max-height: 75%;
+    max-height: 100%;
     overflow: hidden;
     align-self: flex-start;
     padding-left: 3%;
@@ -113,7 +113,8 @@ h1 {
 }
 
 .about {
-    background: linear-gradient(rgb(0,0,0), rgb(96,96,96));
+    /* background: linear-gradient(rgb(0,0,0), rgb(96,96,96)); */
+    background-color: slategray;
     position: relative;
     display: flex;
     justify-content: left;
@@ -134,6 +135,7 @@ h1 {
     padding-right: 50px;
     font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .end {
