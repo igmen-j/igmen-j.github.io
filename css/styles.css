@@ -5,151 +5,76 @@ html {
 body {
     color: white;
     font-family: "Lucida Console", Monaco, monospace;
-    background: lightgray;
+    background: #384955;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
 }
 
-.navbar {
-    overflow: hidden;
+.mynav {
     position: absolute;
-    margin: 30px 50px;
-    width: 50%;
-    
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
-.navbar a {
-    position: relative;
-    color: white;
+.mynav a {
+    color: white !important;
     text-align: center;
-    padding: 20px 30px;
     text-decoration: none;
-    font-size: 17px;
     z-index: 10;
     width: 50%;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.navbar > a:hover {
+.mynav a:hover {
     z-index: 10;
-    position: relative;
-    text-shadow: 1px 1px 2px black, 0 0 12px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 12px blue, 0 0 5px darkblue !important;
   }
 
+.navbar-toggler-icon {
+    color: white !important;
+}
+
 .home {
-    /* background: linear-gradient(rgb(96,96,96), rgb(0,0,0)); */
-    background-color: slategray;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100vh;
 }
 
-h1 {
+.home > h1 {
     font-size: 50px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 .projects {
     position: relative;
-    background-color: gainsboro;
+    background-color: #EDF2F4;
     color: black;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #projects {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 50px;
     color: black;   
     text-shadow: 2px 2px 4px grey;
 }
 
-.proj-container {
-    margin: 0 10vw 5vw;
-    background-color: gainsboro;
-}
-
-.proj-item {
+.card-horizontal {
     display: flex;
-    align-items: center;
-    background-color: whitesmoke;
-    margin-top: 50px;
-    box-shadow: 10px 10px 5px darkgray;
-    height: 40vh;
+    flex: 1 1 auto;
 }
 
-.proj-item > img {
-    height: 100%;
-    width: 35%;
+.card-img {
+    min-height: 50vh;
 }
 
-.proj-img2 {
-    background-color: black;
-}
-
-.proj-desc {
-    max-height: 100%;
-    overflow: hidden;
-    align-self: flex-start;
-    padding-left: 3%;
-    padding-right: 1%;
-    font-size: 16px;
-}
-
-.proj-title {
-    font-size: large;
-    font-weight: bolder;
-    text-shadow: 2px 2px 4px silver;
-}
-
-.about {
-    /* background: linear-gradient(rgb(0,0,0), rgb(96,96,96)); */
-    background-color: slategray;
-    position: relative;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    width: 100%;
-    padding-bottom: 50px;
-}
-
-.about-title {
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    padding-left: 50px;
-}
-
-.about-contents {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-    color: white;
+.about-title, .about-contents, .contact {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.end {
-    padding-bottom: 20px;
-}
-
-.contact {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    padding-left: 50px;
-}
-
-.contact-img {
-    max-width: 10%;
-    height: auto;
-    margin-left: 50px;
+.info_link {
+    min-height: 10vh;
+    max-height: 10vh;
 }
