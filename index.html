@@ -2,6 +2,9 @@
 
 <html>
 <head>
+
+    <title>Justin's Website</title>
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,6 +14,8 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -40,21 +45,49 @@
     <section class="projects">
         <h2 id="projects" class="p-5 d-flex justify-content-center align-items-center">Projects</h2>
 
-
         <div class="row m-0 p-0">
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/this-website.png" alt="This Website">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>Justin's Personal Site</h4>
+                            <p class="pt-3">This website! I used HTML, CSS, and JavaScript with Bootstrap and jQuery libraries. It serves as a practice for my WebDev skills.</p>
+                        </div>
+                        <div class="buttons mt-5 mb-0">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/mole.jpg" alt="Whack-a-mole">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>Whack-A-Mole</h4>
+                            <p class="pt-3">Programmed with Assembly and STM32 Microcontroller. It uses LEDs as moles and buttons as hammer. Project for Computer Systems Architectures class.</p>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/line-bot.jpg" alt="Placeholder">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>Line Detecting Bot</h4>
+                            <p class="pt-3">Programmed with Arduino. A line detecting bot. It will follow the line until its sensors detects all black.</p></div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,16 +96,47 @@
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/simon.jpg" alt="Placeholder">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>Simon</h4>
+                            <p class="pt-3">Programmed with Arduino. Works like the game "Simon". Waiting for the PCB right now.</p> </div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/placeholder.jpg" alt="Placeholder">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>This is a test</h4>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 p-0">
                 <div class="card">
                     <img class="img-responsive card-img" src="img/placeholder.jpg" alt="Placeholder">
+                    <div class="hideDesc desc d-flex flex-column align-content-around ">
+                        <div>
+                            <h4>This is a test</h4>
+                            <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p> </div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-light btn-block">Source</button>
+                            <button type="button" class="btn btn-light btn-block">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,7 +172,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="js/script.js"></script>
+
 </body>
-
-
 </html>
