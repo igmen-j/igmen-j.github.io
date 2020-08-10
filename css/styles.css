@@ -68,6 +68,7 @@ body {
 
 .card-img {
     min-height: 50vh;
+    height: 50vh;
 }
 
 .desc {
