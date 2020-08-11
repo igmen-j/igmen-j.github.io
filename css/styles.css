@@ -71,6 +71,37 @@ body {
     height: 50vh;
 }
 
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    .card-img {
+        min-height: 100vh;
+        height: 100vh;
+    }
+    .desc {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .card-img {
+        min-height: 66vh;
+        height: 66vh;
+    }
+    .desc {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+    .card-img {
+        min-height: 75vh;
+        height: 75vh;
+    }
+    .desc {
+        transform: scale(0.9);
+    }
+}
+
 .desc {
     position: absolute;
     filter: blur(0px);
