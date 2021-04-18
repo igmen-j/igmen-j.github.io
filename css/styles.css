@@ -3,127 +3,64 @@ html {
 }
 
 body {
-    color: white;
-    font-family: "Lucida Console", Monaco, monospace;
-    background: #384955;
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
+    color: #202020;
+    background: whitesmoke;
 }
 
-.mynav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-.mynav a {
-    color: white !important;
-    text-align: center;
-    text-decoration: none;
-    z-index: 10;
-    width: 50%;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.mynav a:hover {
-    z-index: 10;
-    text-shadow: 1px 1px 2px black, 0 0 12px blue, 0 0 5px darkblue !important;
-  }
-
-.navbar-toggler-icon {
-    color: white !important;
-}
-
-.home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.home > h1 {
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-
-.projects {
-    position: relative;
-    background-color: #EDF2F4;
-    color: black;
-    min-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#projects {
-    font-size: 50px;
-    color: black;   
-    text-shadow: 2px 2px 4px grey;
-}
-
-.card-horizontal {
+.welcome-section {
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
 }
 
-.card-img {
-    min-height: 50vh;
-    height: 50vh;
+
+.introduction {
+    font-family: 'Roboto Slab', serif;
+    font-size: 8vh;
 }
 
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
-    .card-img {
-        min-height: 100vh;
-        height: 100vh;
-    }
-    .desc {
-        transform: scale(0.9);
-    }
+.intro-info {
+    font-size: 4vh;
 }
 
-@media screen and (max-width: 768px) and (min-width: 320px) and (orientation: portrait) {
-    .card-img {
-        min-height: 66vh;
-        height: 66vh;
-    }
-    .desc {
-        transform: scale(0.9);
-    }
+* {
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) and (orientation: portrait) {
-    .card-img {
-        min-height: 75vh;
-        height: 75vh;
-    }
-    .desc {
-        transform: scale(0.9);
-    }
+.section-format {
+    display: flex;
+    flex-direction: column;
+    border: 0.005vw solid #CCC;
+    border-radius: 0.5vw;
+    margin: 20px 100px;
+    box-shadow: 0.25vw 0.25vw 0.5vw #777;
 }
 
-.desc {
-    position: absolute;
-    filter: blur(0px);
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 2rem 2rem 0 2rem;
+.top {
+    background: #CCC;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: 	#404040;
 }
 
-.hideDesc {
-    //transition: .5s ease;
-    opacity: 0;
+.contents {
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    padding: 3vw;
 }
 
-.showDesc {
-    opacity: 1;
-}
-
-.about-title, .about-contents, .contact {
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.info_link {
-    min-height: 10vh;
-    max-height: 10vh;
+.about-contents {
+    font-size: 3vh;
+    background-color: #000;
+    color: #63de00;
 }
